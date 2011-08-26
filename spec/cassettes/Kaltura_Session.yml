@@ -1,0 +1,55 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://www.kaltura.com:80/api_v3/?action=start&ks=&partnerId=1&secret=superdupersecret&service=session&type=2
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Fri, 26 Aug 2011 21:38:40 GMT
+      server: 
+      - Apache
+      vary: 
+      - Accept-Encoding
+      x-me: 
+      - pa-apache3
+      x-ua-compatible: 
+      - IE=EmulateIE7
+      content-length: 
+      - "230"
+      content-type: 
+      - text/xml
+    body: <?xml version="1.0" encoding="utf-8"?><xml><result>thisisavalidsession</result><executionTime>0.048589944839478</executionTime></xml>
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://www.kaltura.com:80/api_v3/?action=start&ks=&partnerId=2&secret=superdupersecret&service=session&type=2
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Fri, 26 Aug 2011 21:38:40 GMT
+      server: 
+      - Apache
+      vary: 
+      - Accept-Encoding
+      x-me: 
+      - pa-apache3
+      x-ua-compatible: 
+      - IE=EmulateIE7
+      content-length: 
+      - "227"
+      content-type: 
+      - text/xml
+    body: <?xml version="1.0" encoding="utf-8"?><xml><result><error><code>START_SESSION_ERROR</code><message>Error while starting session for partner [2]</message></error></result><executionTime>0.040677070617676</executionTime></xml>
+    http_version: "1.1"
