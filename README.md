@@ -1,9 +1,14 @@
-Mobile Path
+Kaltura
 --------------
 **Homepage**: [http://www.p-rob.me](http://www.p-rob.me)
 **Author**: [Patrick Robertson](mailto:patricksrobertson@gmail.com)
 **Copyright**: 2011
 **License**: [MIT License](file:LICENSE.txt)
+
+Build Status
+------------
+
+[![Build Status](https://secure.travis-ci.org/patricksrobertson/Kaltura.png?branch=master)](http://travis-ci.org/patricksrobertson/Kaltura?branch=master)
 
 About Kaltura
 -----------------
