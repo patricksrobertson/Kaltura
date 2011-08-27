@@ -39,7 +39,7 @@ If you are using rails, chuck that bitch in your Gemfile:
 You can override some of the defaults in your config/initializers/ folder like so:
 
     #config/initializers/kaltura.rb
-    MobilePath.configure do |config|
+    Kaltura.configure do |config|
       config.partner_id = 12423
       config.adminsitrator_secret = 'somesecretstring'
       config.service_url = 'kaltura-ce.installed.url.com'
